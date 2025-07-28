@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    
+    <form>
+            
+            <label>Full Name</label>
+            <input type ="text" name="fullName" placeholder="Enter your name">
+            <br>
+            <lablel>Email</lablel>
+            <input type="email" name="userEmail" placeholder="Enter your Email">
+             
+            <br>
+            <input type="password" name="password" 
+            title="Not more than 8 charachters "
+            pattern="(?:.*\\d)(?:.*[a-z])(?:.*[A-Z]).{8,}"
+            placeholder="Enter your password" >
+
+            <br>
+            <input type="number" placeholder="Enter your age" step="1">
+
+            <br>
+            <label>Gender</label>
+            <input type="radio" name="userGender" value="male"><label>Male</label>
+            <input type="radio" name="userGender" value="female"><label>Female</label>
+            
+
+            <br>
+            <label>Programming Language</label>
+            <input type="checkbox" name="prlanguge" value ="Java"><label>Java</label>
+            <input type="checkbox" name="prlanguge" value="Js"><label>Js</label>
+            <input type="checkbox" name="prlanguge" value="python"><label>python</label>
+
+            <br>
+            <label>Courses</label>
+            <select name="userCourses">
+                <option selected disabled>Choose course</option>
+                <option value ="fr">Frontend</option>
+                <option value="bk">backend</option>
+                <option value="net" >network</option>
+                <option>bootstrap</option>
+            </select>
+            <br>
+            <input type="file" multiples name="userFiles">
+
+            <br>
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+            <!--<button type="submit">Submit</button> -->
+            <button type="submit">login</button>
+            <button type="reset">Clear data</button>
+        </form>
+        <hr>
+        <button type="submit">Submit</button>
+
+
+        name => 3 : 10
+        password ==> comples password
+        address ==> textarea
+        photo ==> .png
+
+</body>
+</html>

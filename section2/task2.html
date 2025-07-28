@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form>
+        <table border="1" cellpadding="5" cellspacing="0" width="30%" bgcolor="lightblue">
+        
+            <tbody>
+                <tr>
+                <th colspan="2" bgcolor="yellow">Registeration form</th>
+                </tr>
+                <!--Name Row-->
+                <tr>
+                    <td>
+                        <label name="name">Enter Name</label>
+                    </td>
+                    <td>
+                        <input type="text" id="name" name="name" placeholder="Your Name" 
+                        title="from 3 to 10 charachters"
+                        pattern=".{3,10}" required>
+                    </td>
+                </tr>
+                <!--Password Row-->
+                <tr>
+                    <td >
+                        <label name="password">Enter Password</label>
+                    </td>
+                    <td>
+                        <input type="password" name="password" 
+                             title="Not more than 8 charachters "
+                             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                             placeholder="Enter your password" required >
+                    </td>
+                </tr>
+
+                <!--Address Row-->
+                <tr>
+                    <td rowspan="">
+                        <label name="address">Enter Address</label>
+                    </td>
+                    <td>
+                        <textarea id="address" name="address" placeholder="Your Address"></textarea>
+                    </td>
+                </tr>
+
+                <!--Select Game Row-->
+                <tr>
+                    <td>
+                        Select Game
+                    </td>
+                    <td>
+                        <div>
+                            <label>
+                                <input type="checkbox" id="hockey" name="game" value="hockey">
+                                Hockey
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" id="football" name="game" value="football">
+                                Football
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" id="badminton" name="game" value="badminton">
+                                Badminton
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" id="cricket" name="game" value="cricket">
+                                Cricket
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" id="volleyball" name="game" value="volleyball">
+                                Volleyball
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+
+                <!--Gender Row-->
+                <tr>
+                    <td>
+                        Gender
+                    </td>
+                    <td>
+                        <div>
+                            <label>
+                                <input type="radio" id="male" name="gender" value="male">
+                                Male
+                            </label>
+                            <label>
+                                <input type="radio" id="female" name="gender" value="female">
+                                Female
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+
+                <!--Age Row-->
+                <tr>
+                    <td>
+                        <label name="age">Select ur age</label>
+                    </td>
+                    <td>
+                        <select id="age" name="age">
+                            <option selected disabled value="">Select</option>
+                            <option value="18-25">18-25</option>
+                            <option value="26-35">26-35</option>
+                            <option value="36-45">36-45</option>
+                            <option value="45+">45+</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <!--Photo Row-->
+                <tr>
+                    <td>
+                        <label name="photo">Select Photo</label>
+                    </td>
+                    <td>
+                        <input type="file" id="photo" name="photo" accept="image/png">
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">
+                        <div>
+                            <button type="button">Click Me</button>
+                            <button type="reset">Reset</button>
+                            <button type="submit">Submit Form</button>
+                        </div>
+                    </td>
+                </tr>
+            </tfoot>
+         
+        </table>
+    </form>
+</body>
+</html>

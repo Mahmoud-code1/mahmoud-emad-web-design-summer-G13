@@ -6,7 +6,7 @@
 </head>
 <body>
     
-    <form>
+    <form autocomplete="off" action="index.html" method="post">
             
             <label>Full Name</label>
             <input type ="text" name="fullName" placeholder="Enter your name">
@@ -47,12 +47,20 @@
             <br>
             <input type="file" multiples name="userFiles">
 
+            
+            <br>
+
+            <input type="color">
+
+
             <br>
             <input type="submit" value="Register">
             <input type="reset" value="Reset">
             <!--<button type="submit">Submit</button> -->
             <button type="submit">login</button>
             <button type="reset">Clear data</button>
+
+            datalist => search
         </form>
         <hr>
         <button type="submit">Submit</button>

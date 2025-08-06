@@ -1,0 +1,26 @@
+/* Custom CSS for the reload icon - New Design (without triangle) */
+        .reload-icon {
+            width: 90px; /* Slightly larger */
+            height: 90px;
+            border: 6px solid #e2e8f0; /* Lighter gray border */
+            border-bottom-color: #f97316; /* Orange color for contrast */
+            border-radius: 50%;
+            animation: spin 1.8s linear infinite; /* Slower spin */
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        /* Keyframes for the spinning animation */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Inter font from Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
